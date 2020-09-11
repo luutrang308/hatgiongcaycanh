@@ -1,0 +1,32 @@
+@font-face{
+	src: url('../fonts/SVN-Alek Regular.otf');
+	font-family: SVN-Alek;
+}
+@font-face{
+	src: url('../fonts/SVN-Caprica Script.ttf');
+	font-family: SVN-Caprica;
+}
+@font-face{
+	src: url('../fonts/SVN-Poppins-Medium.ttf');
+	font-family: Poppins;
+}
+@font-face{
+	src: url('../fonts/SVN-Poppins-Bold.ttf');
+	font-family: Poppins-bold;
+}
+@font-face{
+	src: url('../fonts/SVN-Poppins-Regular.ttf');
+	font-family: Poppins-regular;
+}
+@font-face{
+	src: url('../fonts/Salsa-Regular.ttf');
+	font-family: Salsa;
+}
+@font-face{
+	src: url('../fonts/Roboto-Bold.ttf');
+	font-family: Roboto;
+}
+@font-face{
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-family: Roboto-regular;
+}
