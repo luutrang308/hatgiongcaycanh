@@ -575,6 +575,9 @@
 	.slick-dots li.slick-active button:before{
 		color: #96A928;
 	}
+	.slick-list{
+		padding: 10px 0;
+	}
 }
 .slider-new-product{
 	margin-top: 20px;
@@ -715,6 +718,7 @@
 	background-image: url(../img/nen.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding: 56px 0px 50px 0px;
 }
 .post-box{
 	background: #FFFFFF;
@@ -911,7 +915,6 @@
 }
 .btn-page{
 	width: 100%;
-    height: 200px;
     text-align: center;
     padding-top: 50px;
     .btn-post{
@@ -1212,16 +1215,54 @@
 		}
 	}
 }
+.video-item{
+	position: relative;
+	.title{
+		position: absolute;
+		top: 0;
+		left:0;
+		width:100%;
+		height: 100%;
+	}
+}
 .video-item-nav{
 	display: flex;
 	justify-content: space-between;
+	.slick-center{
+		.video-item-static{
+			.img-thumnail{
+				&:before{
+					opacity: 1;
+					transition: 0.5s;
+				}
+				.title{
+					img{
+						display: none;
+					}
+					.hover{
+						display: block !important;
+					}
+				}
+			}
+		}
+	}
 }
 .video-item-static{
-	width:23%;
+	    padding: 15px;
 	.img-thumnail{
 		width:100%;
 		height: 180px;
 		position: relative;
+		&:before{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			background: rgba(255, 255, 255, 0.7);
+			left: 0;
+			content: '';
+			opacity: 0;
+		}
 		img{
 			width: 100%;
 			height:100%;
@@ -1235,28 +1276,151 @@
 			img{
 				max-width: 100%;
 			}
+			.hover{
+				display: none;
+			}
 		}
 	}
-	a{
-		color: #fff;
-		font-family: Poppins-regular;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 18px;
-		line-height: 128.17%;
-		text-align: center;
-		width:100%;
+	p{
+		margin-top: 12px;
+		a{
+			font-family: Poppins-regular;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 128.17%;
+			text-align: justify;
+			color: #343434;
+			&:hover{
+				text-decoration: none;
+			}
+		}
 	}
-	
 }
 
-.video-item{
-	position: relative;
-	.title{
-		position: absolute;
-		top: 0;
-		left:0;
-		width:100%;
-		height: 100%;
+/*animation*/
+.circle {
+  border-radius:50%;
+  background-color:#EC8C1D;
+  transition: height .25s ease, width .25s ease;
+  transform:translate(-50%,-50%);
+  z-index: 6;
+    
+    &:before{
+      content:'';
+      display:block;
+      position:absolute;
+      top:0px;
+      right:0px;
+      bottom:0;
+      left:0px;
+      border-radius:50%;
+      border:1px solid #ffffff50; 
+      background: #ffffff30;
+    }
+    &:after {
+      content:'';
+      display:block;
+      position:absolute;
+      top:0; right:0; bottom:0; left:0;
+      border-radius:50%;
+      border:1px solid #ffffff50; 
+      background: #ffffff30;
+    }
+    
+    &:before {
+        animation: ripple 2.5s linear infinite;
+    }
+    
+    &:after {
+        animation: ripple 2s linear 1s infinite;
+    }
+}
+.video-item-nav .slick-center{
+	.circle {
+		border-radius:50%;
+		background-color:#EC8C1D;
+		transition: height .25s ease, width .25s ease;
+		transform:translate(-50%,-50%);
+		z-index: 6;
+
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0px;
+			right:0px;
+			bottom:0;
+			left:0px;
+			border-radius:50%;
+			border:1px solid #6ea82050; 
+			background: #6ea82030;
+		}
+		&:after {
+			content:'';
+			display:block;
+			position:absolute;
+			top:0; right:0; bottom:0; left:0;
+			border-radius:50%;
+			border:1px solid #6ea82050; 
+			background: #6ea82030;
+		}
+
+		&:before {
+			animation: ripple 2.5s linear infinite;
+		}
+
+		&:after {
+			animation: ripple 2s linear 1s infinite;
+		}
 	}
+}
+
+@keyframes ripple{
+  0% {transform:scale(1); }
+  75% {transform:scale(1.5); opacity:1;}
+  100% {transform:scale(2.25); opacity:0;}
+}
+
+/*animation*/
+.video-for, .video-nav{
+	.slick-prev:before, .slick-next:before{
+		display: none;
+	}
+	.slick-next{
+		right: 17px;
+		img{
+			background: rgba(52, 52, 52, 0.5);
+    		padding: 37px 11px 37px 13px;
+		}
+	}
+	.slick-prev{
+		left: 0px;
+		z-index: 2;
+		img{
+			background: rgba(52, 52, 52, 0.5);
+    		padding: 37px 11px 37px 13px;
+		}
+	}
+}
+.video-nav{
+	.slick-list{
+		padding: 0 !important;
+	}
+	.slick-dots{
+		bottom: -40px;
+	}
+	.slick-dots li button:before{
+		font-size: 9px;
+	    color: transparent;
+	    -webkit-text-stroke-width: 1px;
+	    -webkit-text-stroke-color: #96A928;
+	    opacity: 1;
+	}
+	.slick-dots li.slick-active button:before{
+		color: #96A928;
+	}
+}
+.section-post{
+	padding: 70px 0px 60px 0px;
 }
