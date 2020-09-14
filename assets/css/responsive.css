@@ -30,3 +30,13 @@
 	src: url('../fonts/Roboto-Regular.ttf');
 	font-family: Roboto-regular;
 }
+@font-face{
+	src: url('../fonts/Nunito-Regular.ttf');
+	font-family: Nunito;
+}
+@media screen and (min-width: 1200px){
+	.container-fluid{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
