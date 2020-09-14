@@ -40,3 +40,124 @@
 		padding-right: 0 !important;
 	}
 }
+@media screen and (max-width: 1200px){
+	
+}
+@media screen and (min-width: 991px){
+	.header-pc{
+		display: block;
+	}
+	.header-mb{
+		display: none;
+	}
+}
+@media screen and (max-width: 991px){
+	.header-pc{
+		display: none;
+	}
+	.header-mb{
+		display: block;
+	}
+	.slider-pc{
+		margin-bottom: 0 !important;
+	}
+	.slider-pc .item .content{
+		display: none;
+	}
+	.slider-pc .slick-list{
+		padding: 0 !important;
+	}
+	.slider-pc .slick-dots {
+	    bottom: 0;
+	}
+	.slider-pc .item:before{
+		display: none;
+	}
+}
+@media screen and (min-width: 577px){
+	.icon-box-mb{
+		display: none;
+	}
+}
+@media screen and (max-width: 576px){
+	.video-item-nav .slick-list,
+	.slider-product .slick-list,
+	.slider-new-product .slick-list,
+	.slider-post .slick-list,
+	.cate-nav .slick-list{
+	    padding: 0px 70px 0px 0px !important;
+	}
+	.title-default h2{
+		font-size: 26px;
+		width: 75%;
+		margin: auto;
+	}
+	.title-default .description{
+		width: 90%;
+	}
+	.countdown-timer ul{
+		width: 100%;
+	}
+	.countdown-timer ul li{
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+	.countdown-timer ul li p{
+		font-size: 25px;
+	}
+	.countdown-timer ul li span{
+		font-size: 12px;
+	}
+	.poster-hp{
+		height: auto;
+	}
+	.poster-hp{
+		height: auto;
+	}
+	.footer-pc{
+		padding: 10px 0px 90px 0px;
+	}
+	.icon-link{
+		display: none !important;
+	}
+	.title-dai h2{
+		position: relative;
+	}
+	.title-dai h2:after{
+		position: absolute;
+		content: url(../img/la.png);
+		top: 0% !important;
+	    transform: translate(0, -50%) !important;
+		right: 0px;
+	}
+	.title-dai h2 span:before {
+	    top: 50% !important;
+	    transform: translate(0, -50%) !important;
+	}
+	.title-dai h2 span:after {
+	    display: none;
+	}
+	.section-products {
+	    padding: 20px 0px;
+	}
+	.section-countdown{
+		background: #efefef;
+		background-image: none;
+	}
+	.tabs-list .nav-tabs{
+		width: 100%;
+	}
+	.tabs-list .nav-tabs li a{
+		font-size: 25px;
+		    padding: 0px 15px;
+	}
+	.tabs-list .nav-tabs li:first-child a:before{
+		left: 0;
+	}
+	.tabs-list .nav-tabs li a:after{
+		right: -15px;
+	}
+	.slider-video, .slider-product, .slider-cate{
+		padding: 0 15px;
+	}
+}
