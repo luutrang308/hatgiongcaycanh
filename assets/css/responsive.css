@@ -45,6 +45,17 @@
 		padding-right: 0 !important;
 	}
 }
+@media screen and (max-width: 1200px){
+	.product-item .content .box p{
+		font-size: 14px;
+	}
+	.product-item .content .box p span{
+		font-size: 12px;
+	}
+	.tabs-list .nav-tabs{
+		width: 44%;
+	}
+}
 @media screen and (min-width: 991px) and (max-width: 1200px){
 	.hotline span{
 		margin-left: 0;
