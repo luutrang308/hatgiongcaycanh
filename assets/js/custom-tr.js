@@ -79,8 +79,6 @@ $(document).ready(function(){
     return false;
   });
   /* back to top */
-
-
 });
 
 
@@ -188,4 +186,3 @@ jQuery(document).ready(function($) {
     });
   }
 });
-
