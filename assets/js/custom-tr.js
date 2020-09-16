@@ -63,6 +63,37 @@ $(document).ready(function(){
       },
     ]
   });
+  /* slider chi tiet san pham */
+  $('.images-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    fade: true,
+    asNavFor: '.images-nav',
+    prevArrow:"<button class='prev slick-prev'><img class='left-arrow ' src='assets/img/left.png' alt=''></button>",
+    nextArrow:"<button class='next slick-next'><img class='right-arrow ' src='assets/img/right.png' alt=''></button>",
+
+  });
+  $('.images-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.images-for',
+    margin: '30px',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1
+        }
+      },
+    ]
+  });
   $(".humberger-menu").click(function () {
     $(".sub-menu").fadeToggle("slow");
   });
