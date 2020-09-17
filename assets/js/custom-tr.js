@@ -1,3 +1,21 @@
+$('input.input-qty').each(function() {
+  var $this = $(this),
+  qty = $this.parent().find('.is-form'),
+  min = Number($this.attr('min')),
+  max = Number($this.attr('max'))
+  if (min == 0) {
+    var d = 0
+  } else d = min
+  $(qty).on('click', function() {
+    if ($(this).hasClass('minus')) {
+      if (d > min) d += -1
+    } else if ($(this).hasClass('plus')) {
+      var x = Number($this.val()) + 1
+      if (x <= max) d += 1
+    }
+  $this.attr('value', d).val(d)
+})
+});
 $(document).ready(function(){
   $(".video-for .video-item .title").click(function(){
     $(this).css("display", "none");
@@ -110,6 +128,14 @@ $(document).ready(function(){
     return false;
   });
   /* back to top */
+
+  $('.block__title').click(function(event) {
+    if($('.block').hasClass('one')){
+      $('.block__title').not($(this)).removeClass('active');
+      $('.block__text').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
 });
 
 
