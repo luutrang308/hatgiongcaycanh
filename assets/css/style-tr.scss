@@ -38,7 +38,18 @@
 						margin-right: 5px;
 					}
 				}
+				.select-item{
+					position: relative;
+					img{
+						position: absolute;
+					    top: 50%;
+					    right: -9px;
+					    transform: translate(0%, -50%);
+					    pointer-events: none;
+					}
+				}
 				select{
+					width: 35px;
 					color: #6EA820;
 					border: none;
 					font-family: Nunito;
@@ -47,6 +58,10 @@
 					font-size: 16px;
 					line-height: 22px;
 					text-transform: uppercase;
+					-webkit-appearance: none; 
+				    -moz-appearance: none;
+				    appearance: none;
+				    position: relative;
 					&:focus{
 						outline: 0;
 					}
@@ -346,17 +361,98 @@
 	    margin-top: 0;
 	    span{
 	    	position: relative;
-	    	&:after{
-	    		position: absolute;
-	    		content: url(../img/la.png);
-	    		top: -20px;
-    			right: -28px;
+	    	img{
+	    		&:first-child{
+	    			max-width: 100%;
+		    		position: absolute;
+				    left: -45px;
+				    bottom: 7px;
+	    		}
+	    		&:last-child{
+	    			max-width: 100%;
+		    		position: absolute;
+				    top: -10px;
+    				right: -28px;
+	    		}
 	    	}
+	    }
+	}
+	.description{
+		font-family: Poppins-regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 128.17%;
+		text-align: center;
+		color: #000000;
+		width: 75%;
+    	margin: 20px auto;
+    	a{
+    		color: #6EA820;
+    	}
+	}
+}
+.title-center-icon{
+	h2{
+		font-family: SVN-Caprica;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 30px;
+	    line-height: 128.17%;
+	    text-align: center;
+	    color: #58411F;
+	    margin-top: 0;
+	    span{
+	    	position: relative;
 	    	img{
 	    		max-width: 100%;
-	    		position: absolute;
-			    left: -45px;
-			    bottom: 7px;
+		    	position: absolute;
+				top: -10px;
+    			right: -28px;
+	    	}
+	    }
+	}
+	.description{
+		font-family: Poppins-regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 128.17%;
+		text-align: center;
+		color: #000000;
+		width: 75%;
+    	margin: 20px auto;
+    	a{
+    		color: #6EA820;
+    	}
+	}
+}
+.title-gh{
+	h2{
+		font-family: SVN-Caprica;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 30px;
+	    line-height: 128.17%;
+	    text-align: left;
+	    color: #58411F;
+	    margin-top: 0;
+	    span{
+	    	position: relative;
+	    	padding-left: 50px;
+	    	img{
+	    		&:first-child{
+	    			max-width: 100%;
+		    		position: absolute;
+				    left: 0px;
+				    bottom: 5px;
+	    		}
+	    		&:last-child{
+	    			max-width: 100%;
+		    		position: absolute;
+				    top: -10px;
+    				right: -28px;
+	    		}
 	    	}
 	    }
 	}
@@ -1072,10 +1168,9 @@
 	    	&:last-child{
 	    		a{
 	    			position: relative;
-	    			&:before{
+	    			img{
 		    			position: absolute;
-		    			content: url(../img/la.png);
-		    			top: -20px;
+		    			top: -10px;
     					right: 0px;
 		    		}
 		    		&:after{
@@ -2595,10 +2690,41 @@
 	}
 }
 .title-left{
+	margin-top: 30px;
 	h2{
-		text-align: left !important;
-		margin: 25px 0;
-	}	
+		font-family: SVN-Caprica;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 30px;
+	    line-height: 128.17%;
+	    text-align: left;
+	    color: #58411F;
+	    margin-top: 0;
+	    span{
+	    	position: relative;
+	    	img{
+	    		
+	    		max-width: 100%;
+	    		position: absolute;
+	    		top: -10px;
+	    		right: -28px;
+	    	}
+	    }
+	}
+	.description{
+		font-family: Poppins-regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 128.17%;
+		text-align: center;
+		color: #000000;
+		width: 75%;
+    	margin: 20px auto;
+    	a{
+    		color: #6EA820;
+    	}
+	}
 }
 .product-element{
 	.product-grid {
@@ -2631,9 +2757,8 @@
 					padding-left:0;
 					span{
 						position: relative;
-						&:before{
+						img{
 							position: absolute;
-						    content: url(../img/la.png);
 						    top: -20px;
 						    right: -20px;
 						}
@@ -2670,6 +2795,7 @@
 		    }
 		}
 	}
+	
 	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
 		color: #58411F;
 	}
@@ -2707,6 +2833,28 @@
 		font-size: 14px;
 		line-height: 21px;
 		color: #000000;
+		.icon-select-cmt{
+			position: relative;
+			img{
+				position: absolute;
+				top:50%;
+				right: 2px;
+				transform: translate(0, -50%);
+				pointer-events: none;
+			}
+			select{
+				width: 94px;
+				border: 1px solid #BABABA;
+				border-radius: 3px;
+				-webkit-appearance: none;
+		       -moz-appearance: none;
+		       appearance: none;
+		           padding: 0 5px;
+		       &:focus{
+		       	outline: 0;
+		       }
+			}
+		}
     }
 }
 .comment-detail{
@@ -3031,9 +3179,8 @@
 			&:hover{
 				text-decoration: none;
 			}
-			&:before{
+			img{
 				position: absolute;
-				content: url(../img/la.png);
 				top: -20px;
 				right: -20px;
 			}

@@ -42,7 +42,18 @@
 .info .list-action ul li .img img {
   margin-right: 5px;
 }
+.info .list-action ul li .select-item {
+  position: relative;
+}
+.info .list-action ul li .select-item img {
+  position: absolute;
+  top: 50%;
+  right: -9px;
+  transform: translate(0%, -50%);
+  pointer-events: none;
+}
 .info .list-action ul li select {
+  width: 35px;
   color: #6EA820;
   border: none;
   font-family: Nunito;
@@ -51,6 +62,10 @@
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
 }
 .info .list-action ul li select:focus {
   outline: 0;
@@ -347,17 +362,17 @@
 .title-default h2 span {
   position: relative;
 }
-.title-default h2 span:after {
-  position: absolute;
-  content: url(../img/la.png);
-  top: -20px;
-  right: -28px;
-}
-.title-default h2 span img {
+.title-default h2 span img:first-child {
   max-width: 100%;
   position: absolute;
   left: -45px;
   bottom: 7px;
+}
+.title-default h2 span img:last-child {
+  max-width: 100%;
+  position: absolute;
+  top: -10px;
+  right: -28px;
 }
 .title-default .description {
   font-family: Poppins-regular;
@@ -371,6 +386,81 @@
   margin: 20px auto;
 }
 .title-default .description a {
+  color: #6EA820;
+}
+
+.title-center-icon h2 {
+  font-family: SVN-Caprica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 128.17%;
+  text-align: center;
+  color: #58411F;
+  margin-top: 0;
+}
+.title-center-icon h2 span {
+  position: relative;
+}
+.title-center-icon h2 span img {
+  max-width: 100%;
+  position: absolute;
+  top: -10px;
+  right: -28px;
+}
+.title-center-icon .description {
+  font-family: Poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 128.17%;
+  text-align: center;
+  color: #000000;
+  width: 75%;
+  margin: 20px auto;
+}
+.title-center-icon .description a {
+  color: #6EA820;
+}
+
+.title-gh h2 {
+  font-family: SVN-Caprica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 128.17%;
+  text-align: left;
+  color: #58411F;
+  margin-top: 0;
+}
+.title-gh h2 span {
+  position: relative;
+  padding-left: 50px;
+}
+.title-gh h2 span img:first-child {
+  max-width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+}
+.title-gh h2 span img:last-child {
+  max-width: 100%;
+  position: absolute;
+  top: -10px;
+  right: -28px;
+}
+.title-gh .description {
+  font-family: Poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 128.17%;
+  text-align: center;
+  color: #000000;
+  width: 75%;
+  margin: 20px auto;
+}
+.title-gh .description a {
   color: #6EA820;
 }
 
@@ -1000,10 +1090,9 @@
 .tabs-list .nav-tabs li:last-child a {
   position: relative;
 }
-.tabs-list .nav-tabs li:last-child a:before {
+.tabs-list .nav-tabs li:last-child a img {
   position: absolute;
-  content: url(../img/la.png);
-  top: -20px;
+  top: -10px;
   right: 0px;
 }
 .tabs-list .nav-tabs li:last-child a:after {
@@ -2513,9 +2602,41 @@
   margin: 0 3px;
 }
 
+.title-left {
+  margin-top: 30px;
+}
 .title-left h2 {
-  text-align: left !important;
-  margin: 25px 0;
+  font-family: SVN-Caprica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 128.17%;
+  text-align: left;
+  color: #58411F;
+  margin-top: 0;
+}
+.title-left h2 span {
+  position: relative;
+}
+.title-left h2 span img {
+  max-width: 100%;
+  position: absolute;
+  top: -10px;
+  right: -28px;
+}
+.title-left .description {
+  font-family: Poppins-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 128.17%;
+  text-align: center;
+  color: #000000;
+  width: 75%;
+  margin: 20px auto;
+}
+.title-left .description a {
+  color: #6EA820;
 }
 
 .product-element .product-grid {
@@ -2551,9 +2672,8 @@
 .tab-product-detail .tabs-list-detail ul li a span {
   position: relative;
 }
-.tab-product-detail .tabs-list-detail ul li a span:before {
+.tab-product-detail .tabs-list-detail ul li a span img {
   position: absolute;
-  content: url(../img/la.png);
   top: -20px;
   right: -20px;
 }
@@ -2620,6 +2740,28 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+}
+.number-cmt .select-comt .icon-select-cmt {
+  position: relative;
+}
+.number-cmt .select-comt .icon-select-cmt img {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+.number-cmt .select-comt .icon-select-cmt select {
+  width: 94px;
+  border: 1px solid #BABABA;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 5px;
+}
+.number-cmt .select-comt .icon-select-cmt select:focus {
+  outline: 0;
 }
 
 .comment-detail {
@@ -2942,9 +3084,8 @@
 .post-about h6 a:hover {
   text-decoration: none;
 }
-.post-about h6 a:before {
+.post-about h6 a img {
   position: absolute;
-  content: url(../img/la.png);
   top: -20px;
   right: -20px;
 }
