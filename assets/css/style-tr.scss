@@ -1107,7 +1107,8 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	padding: 10px 0px 25px 0px;
+	padding: 10px 0px 15px 0px;
+	z-index: -2;
 	&:before{
 		position: absolute;
 		content: '';
@@ -1116,6 +1117,7 @@
 		background: rgba(23, 23, 23, 0.9);
 		top:0;
 		left:0;
+		z-index: -1;
 	}
 }
 .logo-footer{
@@ -4746,4 +4748,18 @@
     	left: 50%;
     	transform: translate(-50%, -50%);
     }
+}
+.copyrightter{
+	text-align: center;
+	font-family: Roboto-regular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	border-top: 1px solid #fff;
+    padding: 15px 0 0 0;
+	a{
+		color: #FFFFFF;
+	}
 }
