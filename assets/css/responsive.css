@@ -34,9 +34,19 @@
 	src: url('../fonts/Nunito-Regular.ttf');
 	font-family: Nunito;
 }
+@font-face{
+	src: url('../fonts/SanFranciscoText-Regular.otf');
+	font-family:SanFranciscoText;
+}
 @media screen and (min-width: 991px) and (max-width: 1400px){
 	.icon-link{
 		right: 0%;
+	}
+	.banner-page h2{
+		left: 100px;
+	}
+	.form-htpp input{
+		width: 38% !important;
 	}
 }
 @media screen and (min-width: 1200px){
@@ -57,13 +67,22 @@
 		font-size: 12px;
 	}
 	.tabs-list .nav-tabs{
-		width: 44%;
+		width: 50%;
 	}
 	.banner-page h2{
 		top: 50%;
 	    left: 25px;
 	    transform: translate(0%, -50%);
 	    font-size: 30px;
+	}
+	.img-service-text p{
+		font-size: 20px;
+	}
+	.form-htpp{
+		width: 100%;
+	}
+	.map-htpp{
+		width: 100%;
 	}
 }
 @media screen and (min-width: 991px) and (max-width: 1200px){
@@ -118,6 +137,54 @@
 		width: 50%;
 		float:left;
 	}
+	.tabs-list .nav-tabs {
+	    width: 65%;
+	}
+	.element-post-detail .detail-post-item{
+		width: 100%;
+	}
+	.contact-form .info .form-info{
+		padding: 10px;
+	}
+	.contact-form .info .form-info h2{
+		margin: 10px 0;
+	}
+	.contact-form .info .form-info .item .text{
+		padding-left: 40px;
+	}
+	.contact-form .info .form-info .item .text p{
+		font-size: 12px;
+	}
+	.title-line .description{
+		margin-bottom: 0;
+	}
+	.contact-form .form-left form input{
+		padding: 15px 0 10px 0;
+	}
+	.contact-form .form-left form textarea{
+		height: 100px;
+	}
+	.contact-form .form-left form .btn-form-contact{
+		margin-top: 5px;
+	}
+	.section-notfound .not-found{
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+	.img-login{
+		display: none;
+	}
+	.form-login{
+		width: 100%;
+		text-align: center;
+	}
+	.section-login{
+		padding: 50px 0;
+	}
+	.section-login{
+		padding: 50px 0;
+	}
 }
 @media screen and (min-width: 577px){
 	.icon-box-mb{
@@ -133,9 +200,7 @@
 	    padding: 0px 80px 0px 0px !important;
 	}
 	.title-default h2{
-		font-size: 26px;
-		width: 75%;
-		margin: auto;
+		font-size: 22px;
 	}
 	.title-default .description{
 		width: 90%;
@@ -201,7 +266,7 @@
 		left: -25px;
 	}
 	.tabs-list .nav-tabs li a:after{
-		right: -15px;
+		right: -3px;
 	}
 	.slider-video, .slider-product, .slider-cate{
 		padding: 0 15px;
@@ -225,4 +290,219 @@
 	.title-list h2:before, .title-list h2 span:after{
 		display: none;
 	}
+	#product-detail{
+		width: 100%;
+		padding: 0 15px;
+	}
+	.info-product{
+		width: 100%;
+		padding: 0 15px;
+	}
+	.info-product h5{
+		font-stretch: 24px;
+	}
+	.img-service-text p {
+	    font-size: 16px;
+	}
+	
+	.product-grid{
+		padding: 0 15px !important;
+	}
+	.profile-product{
+		width: 100%;
+	}
+	.siderbar-list{
+		width: 100%;
+	}
+	.tab-product-detail .tabs-list-detail ul li a{
+		font-size: 22px;
+	}
+	.tab-product-detail .tabs-list-detail ul li a span:before{
+		top: 0;
+    	right: -100px;
+	}
+	.tab-product-detail .product-grid{
+		padding: 0 !important;
+	}
+	.title-default{
+		margin-top: 25px;
+	}
+	.breadcrumb-item{
+		margin-right: 15px;
+	}
+	.detail-product-page{
+		overflow: hidden;
+	}
+	.title-left-icon h2{
+		margin: inherit;
+		width: 100%;
+	}
+	.product-price-bill{
+		display: inherit;
+	}
+	.product-price-bill p{
+		font-size: 16px;
+	}
+	.product-price-bill p strong{
+		font-stretch: 22px;
+	}
+	.product-cart-price tr{
+		padding: 5px 0;
+	}
+	.product-cart-price tr th{
+		padding: 0 5px;
+		font-size: 12px;
+	}
+	.product-cart-price tr td{
+		width: 25%;
+	}
+	.product-cart-price tr td:first-child .img-cart{
+		width: 80px;
+	}
+	.product-cart-price tr td:nth-child(2), .product-cart-price tr td:nth-child(3), .product-cart-price tr td:nth-child(4){
+		padding-left: 5px;
+	}
+	.product-cart-price tr td:nth-child(2) a,.product-cart-price tr td:nth-child(4) p,.product-cart-price tr td:nth-child(4) p span{
+		font-size: 10px;
+	}
+	.product-cart-price tr td:nth-child(4) p{
+		line-height: 8px;
+	}
+	.buttons_added .input-qty, .buttons_added .is-form{
+		font-size: 12px;
+		height: 20px;
+    	width: 20px;
+	}
+	.product-cart-price tr td:first-child .img-cart .remote-pro{
+		padding: 0px 4px 1px 4px;
+		font-size: 12px;
+	}
+	.payments-element form span{
+		display: flex;
+	}
+	.payments-element form span label{
+		text-align: left;
+	}
+	.payments-element form span input[type=radio]{
+		width: 22px;
+	}
+	.about-us{
+		display: inline-block;
+		width: 100%;
+		padding: 0 15px;
+	}
+	.about-us .item{
+		width: 50%;
+		float:left;
+	}
+	.about-us .item .content h6, .about-us .item .content p{
+		font-size: 13px;
+	}
+	.about-us-element .text{
+		width: 100%;
+		padding: 15px;
+	}
+	.about-us-element .img{
+		position: inherit;
+		width: 100%;
+		padding: 15px;
+	}
+	.post-box-share .content h5 a{
+		font-size: 24px;
+	}
+	.post-detail .title-detail h2{
+		font-size: 22px;
+	}
+	.element-list{
+		margin-top: 0;
+	}
+	.link-page-ct a{
+		font-size: 18px;
+	}
+	.like-detail{
+		display: inherit;
+		text-align: center;
+	}
+	.like-detail p{
+		margin-top: 10px;
+	}
+	.number-cmt p{
+		font-size: 12px;
+	}
+	.post-detail-about{
+		margin-bottom: 20px;
+	}
+	.inner-td .img-td{
+		width: 100%;
+		padding: 0 15px;
+	}
+	.inner-td table{
+		width: 100%;
+	}
+	.inner-td table tr th{
+		padding-left: 15px;
+	}
+	.detail-td-element .title-detail, .content-td, .title-noicon{
+		padding: 0 15px;
+	}
+	.link-td{
+		padding: 15px;
+	}
+	.detail-td-element .title-detail h2, .title-noicon h3{
+		font-size: 22px;
+	}
+	.inner-post-same{
+		display: inherit;
+		padding: 0 15px;
+	}
+	.inner-post-same .tuyendung-element{
+		width: 100%;
+	}
+	.tuyendung-post .content h5 a{
+		font-size: 18px;
+	}
+	.tuyendung-post table tr th{
+		width: 40%;
+	}
+	.tuyendung-post table tr th, .tuyendung-post table tr td{
+		font-size: 12px;
+	}
+	.contact-form{
+		margin-top: 0;
+		width: 100%;
+		display: inline-block;
+		padding: 15px;
+	}
+	.title-default .description{
+		width: 100%;
+	}
+	.contact-form .info{
+		padding-left: 25px;
+    	padding-top: 35px;
+	}
+	.contact-form:before{
+		display: none;
+	}
+	.contact-form .form-left, .contact-form .info{
+		width: 100%;
+	}
+	.form-login form{
+		width: 300px;
+	}
+	.form-login form .btn-link-login a{
+		font-size: 12px;
+		height: 35px;
+		line-height: 25px;
+		width: 130px;
+	}
+	.form-login form .btn-link-login a img {
+	    margin-right: 10px;
+	}
+	.form-login form .check-box span, .form-login form .check-box a, .form-login form p{
+		font-size: 14px;
+	}
+	
+
 }
+
+
