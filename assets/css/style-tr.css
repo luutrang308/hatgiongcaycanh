@@ -2912,6 +2912,10 @@
   border-bottom: 1px dashed rgba(110, 168, 32, 0.5);
 }
 
+.post-about:hover .img img {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 .post-about .img {
   height: 240px;
   overflow: hidden;
