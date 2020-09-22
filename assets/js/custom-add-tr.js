@@ -1,4 +1,4 @@
-/* countdown timer */
+
 const second = 1000,
      minute = second * 60,
      hour = minute * 60,
@@ -13,4 +13,3 @@ let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 }, second);
-/* countdown timer */
