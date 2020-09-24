@@ -130,6 +130,14 @@ $(document).ready(function(){
   $(".humberger-menu").click(function () {
     $(".sub-menu").fadeToggle("slow");
   });
+  $(".close-mb").click(function () {
+    $(".sub-menu").fadeToggle("slow");
+  });
+  $(".sub-menu li").click(function () {
+    $(this).find(".list-sub").fadeToggle("slow");
+    $(this).find(".show-sub").fadeToggle("slow");
+    $(this).find(".hide-sub").fadeToggle("slow");
+  });
   /* back to top */
   $(window).scroll(function(){
     if ($(this).scrollTop() > 500) {
