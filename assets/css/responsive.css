@@ -116,16 +116,29 @@
 		margin-bottom: 0 !important;
 	}
 	.slider-pc .item .content{
+		display: block;
+	    left: 15px;
+	    text-align: left;
+	}
+	.slider-pc .item .content h2{
+		font-size: 18px;
+	    margin: 0;
+	    line-height: 1.5;
+	}
+	.slider-pc .item .content p{
+		font-size: 10px;
+	    text-align: left;
+	    margin-bottom: 20px;
+	    width: 59%;
+	}
+	.slider-pc .item .content .btn-cc{
 		display: none;
 	}
 	.slider-pc .slick-list{
 		padding: 0 !important;
 	}
 	.slider-pc .slick-dots {
-	    bottom: 0;
-	}
-	.slider-pc .item:before{
-		display: none;
+	    bottom: 10px;
 	}
 	.element-list .list-products-item, .siderbar-list{
 		width: 100% !important;
@@ -196,14 +209,27 @@
 	.slider-product .slick-list,
 	.slider-new-product .slick-list,
 	.slider-post .slick-list,
-	.cate-nav .slick-list{
+	.cate-nav .slick-list,
+	.product-grid-slider-mb .slick-list,
+	.product-grid-mb-2 .slick-list{
 	    padding: 0px 80px 0px 0px !important;
+	    overflow: inherit !important;
+	}
+	.slider-product .slick-dots, .cate-nav .slick-dots, .video-nav .slick-dots,
+	.product-grid-mb-2 .slick-dots, .product-grid-slider-mb .slick-dots{
+		bottom: -15px !important;
+	}
+	.slider-post .slick-dots{
+	 	bottom: -35px !important;
+	}
+	.slider-product .item{
+		padding: 0 30px 0 0;
+	}
+	.product-grid-slider-mb .item, .product-grid-mb-2 .item{
+		padding-right: 30px !important;
 	}
 	.title-default h2{
-		font-size: 22px;
-	}
-	.title-default .description{
-		width: 90%;
+		font-size: 18px;
 	}
 	.countdown-timer ul{
 		width: 100%;
@@ -222,6 +248,7 @@
 	.poster-hp{
 		height: auto;
 		margin-bottom: 20px;
+		display: none;
 	}
 	.footer-pc{
 		padding: 20px 0px 75px 0px;
@@ -232,13 +259,13 @@
 	.title-dai h2{
 		position: relative;
 	}
-	.title-dai h2:after{
+	/*.title-dai h2:after{
 		position: absolute;
 		content: url(../img/la.png);
 		top: 0% !important;
 	    transform: translate(0, -50%) !important;
 		right: 0px;
-	}
+	}*/
 	.title-dai h2 span:before {
 	    top: 50% !important;
 	    transform: translate(0, -50%) !important;
@@ -247,7 +274,8 @@
 	    display: none;
 	}
 	.section-products {
-	    padding: 20px 0px;
+	    padding: 20px 0px 30px 0;
+	    overflow: hidden;
 	}
 	.section-countdown{
 		background: #efefef;
@@ -269,12 +297,22 @@
 	.slider-video, .slider-product, .slider-cate{
 		padding: 0 15px;
 		margin-bottom: 0px !important;
+		overflow: inherit;
 	}
 	.video-item .title p, .post-box .content h5 a{
-		font-size: 18px;
+		font-size: 16px;
+		display: -webkit-box;
+	    -webkit-line-clamp: 1;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    bottom: 5px;
 	}
 	.video-item-static p a{
 		font-size: 16px;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 	.news-sidebar .post-sb{
 		width: 100%;
@@ -474,7 +512,8 @@
 		padding: 15px;
 	}
 	.title-default .description{
-		width: 100%;
+		width: 93%;
+		font-size: 14px;
 	}
 	.contact-form .info{
 		padding-left: 25px;
@@ -535,11 +574,22 @@
 	.title-padding {
 	    padding-top: 30px;
 	}
-	.section-new-product, .section-product-grid, .section-countdown, .section-video{
-		padding: 20px 0;
+	.section-video{
+		padding: 20px 0 0 0;
+		overflow: hidden;
+	}
+	.section-countdown{
+		padding: 20px 0 30px 0;
+	}
+	.section-new-product, .section-product-grid{
+		padding: 20px 0 0 0;
 	}
 	.section-post{
 		padding: 20px 0 35px 0;
+		overflow: hidden;
+	}
+	.video-item-static{
+		padding-bottom: 0;
 	}
 	.product-grid .item{
 		padding: 0;
@@ -642,5 +692,37 @@
 	.section-notfound img{
 		width: 100%;
 	}
+	/* home page mobile */
+	.slider-pc .item img{
+		height: 200px;
+		object-fit: cover;
+	}
+	.video-item .video{
+		height: 180px;
+	}
+	.video-item .title .circle img{
+		width: 40px;
+	}
+	.video-for .slick-next img{
+		padding:25px 5px 25px 7px;
+	}
+	.video-for .slick-next {
+	    right: 5px;
+	    top: 40%;
+	}
+	.video-for .slick-prev img{
+		padding:25px 5px 25px 7px;
+	}
+	.video-for .slick-prev {
+	    left: 0px;
+	    top: 40%;
+	}
+	.video-item-static .img-thumnail{
+		height: 100px;
+	}
+	.section-countdown .slider-product .slick-list{
+		margin: 0;
+	}
+
 }
 
