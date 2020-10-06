@@ -1463,18 +1463,6 @@
   transform: translate(-50%, -50%);
   z-index: 6;
 }
-.circle:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0;
-  left: 0px;
-  border-radius: 50%;
-  border: 1px solid #ffffff50;
-  background: #ffffff30;
-}
 .circle:after {
   content: "";
   display: block;
@@ -1537,11 +1525,11 @@
     transform: scale(1);
   }
   75% {
-    transform: scale(1.5);
+    transform: scale(1.25);
     opacity: 1;
   }
   100% {
-    transform: scale(2.25);
+    transform: scale(1.75);
     opacity: 0;
   }
 }
