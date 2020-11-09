@@ -138,6 +138,9 @@ $(document).ready(function(){
     $(this).addClass("active");
   });
   /* back to top */
+  var scrollInterval = setInterval(function() { 
+    document.body.scrollTop = document.body.scrollHeight;
+  }, 50);
   $(window).scroll(function(){
     if ($(this).scrollTop() > 500) {
       $('.backtotop').fadeIn();
